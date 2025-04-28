@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Landing</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>KoreaTour</h1>
+        <nav>
+            <a href="#page1">Tours</a>
+            <a href="#page2">About Us</a>
+            <a href="#page3">Booking</a>
+        </nav>
+    </header>
+
+    <div id="page1" class="page">
+        <div class="content-box-page1-text">
+            <h1>Welcome to South Korea!  </h1>
+            <h2><i>Discover the charm of modern metropolises and cultural heritage</i></h2>
+            <ul>
+                <li>
+                    <img
+                     src="resources/like.png" width="5%">
+                    <p>Exclusive tours from $1,000  </p>
+                </li>
+                <li>
+                    <img src="resources/like.png" width="5%">
+                    <p>30% discount for early booking  </p>
+                </li>
+                <li>
+                    <img src="resources/like.png" width="5%">
+                    <p>Group trips with savings of up to 17%</p>
+                </li>
+                <li> <button type="button" onclick="scrollToPage3()">BOOK</button></div></li>
+            </ul>
+            
+        <div class="content-box-page1-photo">
+            <img src="resources/1.jpg" >
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="content-box-page2-photo1">
+            <img src="resources/2.jpg">
+        </div>
+        <div class="content-box-page2 text">
+            <div class="1 paragraph">
+                <img src="resources/tw.png" width="10%" height="10%">
+               
+                <p>Travel through futuristic cities with cutting-edge technology and vibrant lights</p>
+            </div>
+            <div class="2 paragraph">
+                <img src="resources/tw.png" width="10%" height="10%">
+               
+                <p>Visit ancient temples, palaces, and traditional villages that preserve the spirit of the era</p>
+            </div>
+            <div class="3 paragraph">
+                <img src="resources/tw.png" width="10%" height="10%">
+               
+                <p>Taste kimchi, barbecue, and the most delicious street food in the country </p>
+            </div>
+            <div class="4 paragraph">
+                <img src="resources/tw.png" width="10%" height="10%">
+              
+                <p>                    - Jeju – an island of volcanoes and stunning landscapes</p>
+            </div>
+            <button type="button" onclick="scrollToPage3()">BOOK</button>
+        </div>
+       
+        <div class="content-box-page2-photo2">
+            <img src="resources/3.jpg">
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="rounded-box-page3">
+           
+            <div class="content3">
+            <h2>Want a personalized tour?  </h2>
+            <form id="subscriptionForm" action="your-server-endpoint" method="POST">
+
+
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+<div class="checkbox-container">
+                <input type="checkbox" id="acceptPolicy" name="acceptPolicy" required>
+                <label for="acceptPolicy">I accept <a href="#" target="_blank">Privacy Policy</a>.</label>
+            </div>
+                <button type="submit">Submit request</button>
+            </form>
+        </div>
+        <div class="photo3">
+        <img src="resources/4-form.jpg"></div>
+    </div>
+   
+    </div>
+
+    <footer id="footer">
+        <div class="footer-menu">
+            <nav>
+                <a href="#page1">Tours</a>
+                <a href="#page2">About Us</a>
+                <a href="#page3">Booking</a>
+            </nav>
+        </div>
+        <div class="SocialMedia">
+            <span class="word">KoreaTour</span>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank">
+                <img src="resources/f.png" alt="Соцсеть 1" /></a>
+                <a href="https://telegram.org" target="_blank">
+                <img src="resources/tel.png" alt="Соцсеть 2" /></a>
+                <a href="https://www.instagram.com" target="_blank">
+                <img src="resources/inst.png" alt="Соцсеть 3" /></a>
+
+            </div>
+            <button class="btn" onclick="scrollToPage3()">BOOK</button>
+        </div>
+        
+        <div class="Copyright">
+            <span class="copyright">© 2024. All rights reserved.</span>
+            <span class="politics">Privacy Policy</span>
+            <span class="conditions">Terms of Use</span>
+        </div>
+        
+    </footer>
+
+    <script src="scroll.js"></script>
+
+</body>
+
+</html>

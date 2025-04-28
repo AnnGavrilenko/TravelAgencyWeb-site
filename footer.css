@@ -1,0 +1,85 @@
+footer {
+    bottom: 0;
+    width: 100%;
+    background: rgb(46, 46, 46);
+    color: white;
+    
+   
+   
+}
+
+.footer-menu {
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: white;
+}
+
+footer nav {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+footer nav a {
+    margin-left: 5%; /* Отступ слева */
+    text-decoration: none; /* Убирает подчеркивание текста */
+    color: black; /* Начальный цвет текста */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+footer nav a:hover {
+    color: white; /* Цвет текста при наведении */
+}
+
+
+.SocialMedia, .Copyright {
+    width: 100%;
+}
+
+
+.SocialMedia, .Copyright {
+    display: flex;
+    justify-content: space-between; /* Разделяет элементы по краям */
+    align-items: center; /* Вертикальное выравнивание */
+    padding: 10px; /* Отступы вокруг содержимого */
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Центрирование иконок */
+    flex-grow: 1; /* Увеличивает пространство иконок по мере изменения ширины */
+}
+
+.icons img {
+    width: 30px; /* Ширина иконок */
+    height: 30px; /* Высота иконок */
+    margin: 0 5px; /* Отступы между иконками */
+}
+
+
+
+.copyright, .politics, .conditions, .btn, .word {
+    flex-grow: 1; /* Позволяет элементам занимать доступное пространство */
+    text-align: center; /* Центрирование текста */
+}
+
+.btn {
+    width: 1%;
+    background-color: white; /* Фоновый цвет кнопки */
+    color: black; /* Цвет текста */
+    border: 2px solid black; /* Чёрная граница кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход при изменении цвета */
+    border-radius: 5px; /* Закругление углов кнопки (по желанию) */
+}
+
+.btn:hover {
+    background-color: black; /* Цвет фона при наведении */
+    color: white; /* Цвет текста при наведении */
+    border-color: white; /* Цвет границы при наведении */
+}

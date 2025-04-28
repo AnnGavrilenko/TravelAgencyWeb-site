@@ -1,0 +1,113 @@
+
+
+.rounded-box-page3 {
+    width: 90%; /* ширина блока стоит относительно ширины экрана */
+    height: 50vh; /* высота относительно высоты вьюпорта */
+  
+    border-radius: 20px;
+    margin: 2% auto; /* центрируем блок */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  background-color: rgb(255, 255, 255);
+   
+}
+
+.content3 {
+    width: 50%;
+    padding-left:3%;
+    padding-right: 3%;
+    height: 100%;
+    padding-top: 5%;
+    z-index: 1;
+    
+   
+}
+
+.photo3 {
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: 0;
+}
+
+.photo3 img{
+    width: 100%;
+  
+   
+   
+}
+ 
+form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1%; /* Отступ между элементами формы */
+    margin: 1%;
+    
+   
+}
+
+.content3 h2 {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+input[type="text"],
+input[type="email"], input[type="checkbox"]  {
+    padding: 10px; /* Внутренние отступы для полей */
+    border: 1px solid #ccc; /* Серый бордер */
+    border-radius: 5px; /* Закругленные углы */
+    margin-top: 2%;
+}
+
+.checkbox-container {
+    align-items: left;
+}
+
+form button {
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    border: none; /* Убираем бордер */
+    border-radius: 5px; /* Закругленные углы для кнопки */
+    cursor: pointer; /* Указатель на кнопке */
+    margin-top: 1%;
+}
+
+form button:hover {
+    background-color: #45a049; /* Темнее при наведении */
+}
+
+/* Стили для ссылки */
+.checkbox-container a {
+    color: rgb(80, 76, 76); /* Серый цвет для ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.checkbox-container a:hover {
+    color: black; /* Черный цвет при наведении */
+}
+
+
+
+@media (max-width: 900px) { /* Если вы хотите применить дополнительный стиль для ещё меньших экранов */
+    
+    .rounded-box-page3 {
+        flex-direction: column;
+        
+    }
+    .content3{
+       width: 100%; /* Меньшие отступы на узких экранах */
+
+       
+    }
+    .photo3 img {
+        height: 100%;
+    }
+}
+

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'CustomFont'; /* Имя, которое вы будете использовать для этого шрифта */
+    src: url('resources/fonts/cerarounddemo-regular.woff2') format('woff2'), /* Путь к файлу шрифта */
+         url('resources/fonts/cerarounddemo-regular.woff') format('woff'),
+         url('resources/fonts/cerarounddemo-regular.ttf') format('truetype'); /* Другие форматы как запасные варианты */
+    font-weight: normal; /* Нормальный вес шрифта */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
+
+
+#page2 {
+    flex-direction:row; /* по умолчанию вертикально */
+    gap: 0;
+   
+}
+
+ .content-box-page2-photo1, .content-box-page2-photo2 {
+    width: 30%; /* 3 дива в одной строке */
+    display: inline-block;
+    height: 100%; /* высота относительно высоты вьюпорта */
+    background: lightblue;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.content-box-page2-photo1 img, .content-box-page2-photo2 img {
+    height: 100%;
+}
+
+.text {
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+
+.paragraph {
+    border-bottom: 1px solid black;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    font-size: 150%;
+    font-family: 'CustomFont', sans-serif;
+}
+
+
+
+
+.text button {
+    margin-top: 1%;
+    width: 80%;
+    background-color: white; /* Фоновый цвет кнопки */
+    color: black; /* Цвет текста */
+    border: 2px solid black; /* Чёрная граница кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход при изменении цвета */
+    border-radius: 5px; /* Закругление углов кнопки (по желанию) */
+}
+
+.text button n:hover {
+    background-color: black; /* Цвет фона при наведении */
+    color: white; /* Цвет текста при наведении */
+    border-color: white; /* Цвет границы при наведении */
+}
+
+
+@media (max-width: 750px) { /* Если вы хотите применить дополнительный стиль для ещё меньших экранов */
+    #page2 {
+        flex-direction:column; /* по умолчанию вертикально */
+        
+    }
+    .content-box-page2-photo1  {
+        width: 100%;
+        height: 100%;
+        order: 1;
+    }
+
+    .content-box-page2-photo2  {
+        width: 100%;
+        height: 100%;
+        order: 3;
+    }
+
+    .text {
+        width: 100%;
+        height: 100%;
+        order: 2;
+    }
+
+    .content-box-page2-photo1 img, .content-box-page2-photo2 img {
+        width: 100%;
+    }
+    
+
+}

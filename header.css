@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    background: white;
+    z-index: 1000;
+    padding: 1% 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.7s ease;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    width: 80%;
+    
+}
+header nav a {
+    margin-left: 5%; /* Отступ слева */
+    text-decoration: none; /* Убирает подчеркивание текста */
+    color: black; /* Начальный цвет текста */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+header nav a:hover {
+    color: white; /* Цвет текста при наведении */
+}
+
+#header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Затемнённый фон */
+    color: white;
+}
+
+header.scrolled nav a {
+    color: white; /* Цвет текста при scrolled */
+}
+
+header.scrolled nav a:hover {
+    color: black; /* Цвет текста при наведении для scrolled */
+}
